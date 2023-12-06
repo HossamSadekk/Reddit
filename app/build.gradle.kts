@@ -67,4 +67,17 @@ dependencies {
     androidTestImplementation(AndroidTestingLib.compose_junit4)
     debugImplementation(AndroidComposeDebugLib.ComposeUiTooling)
     debugImplementation(AndroidComposeDebugLib.UiTestManifest)
+    // di
+    implementation(DI.Hilt)
+    implementation(DI.Hilt_Compiler)
+    implementation(DI.Hilt_Navigation)
+    // navigation
+    implementation(Navigation.NavigationCompose)
+    // MODULES
+    implementation(project(Modules.ARTICLES))
+    implementation(project(Modules.ARTICLES_DETAILS))
+    implementation(project(Modules.COMMON))
+
+
+
 }
