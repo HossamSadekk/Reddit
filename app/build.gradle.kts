@@ -73,6 +73,8 @@ dependencies {
     implementation(DI.Hilt_Navigation)
     // navigation
     implementation(Navigation.NavigationCompose)
+    // timber
+    implementation(Logger.Timber)
     // MODULES
     implementation(project(Modules.ARTICLES))
     implementation(project(Modules.ARTICLES_DETAILS))
