@@ -62,5 +62,8 @@ dependencies {
     implementation(DI.Hilt_Navigation)
     // navigation
     implementation(Navigation.NavigationCompose)
+    // modules
+    implementation(project(Modules.CORE))
+
 
 }

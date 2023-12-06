@@ -78,7 +78,7 @@ dependencies {
     // MODULES
     implementation(project(Modules.ARTICLES))
     implementation(project(Modules.ARTICLES_DETAILS))
-    implementation(project(Modules.COMMON))
+    implementation(project(Modules.CORE))
 
 
 

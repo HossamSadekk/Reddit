@@ -49,6 +49,8 @@ object Modules {
     const val ARTICLES_DETAILS = ":articleDetails"
     const val COMMON = ":common"
     const val MODELS = ":common:models"
+    const val REMOTE = ":common:remote"
+    const val CORE = ":common:core"
 }
 object Logger {
     const val Timber = "com.jakewharton.timber:timber:5.0.1"
