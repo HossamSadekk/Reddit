@@ -24,3 +24,32 @@ object AndroidComposeDebugLib {
     const val ComposeUiTooling = "androidx.compose.ui:ui-tooling"
     const val UiTestManifest = "androidx.compose.ui:ui-test-manifest"
 }
+
+object Navigation {
+    const val NavigationCompose = "androidx.navigation:navigation-compose:2.7.5"
+}
+object DI {
+    const val Hilt = "com.google.dagger:hilt-android:2.44"
+    const val Hilt_Compiler = "com.google.dagger:hilt-android-compiler:2.44"
+    const val Hilt_Navigation = "androidx.hilt:hilt-navigation-compose:1.0.0"
+}
+object Local {
+    const val Preferences_DataStore = "androidx.datastore:datastore-preferences:1.0.0"
+    const val room = "androidx.room:room-runtime:2.5.2"
+    const val room_compiler = "androidx.room:room-compiler:2.5.2"
+}
+
+object Remote {
+    const val retrofit2 = "com.squareup.retrofit2:retrofit:2.7.2"
+    const val retrofit2_converter = "com.squareup.retrofit2:converter-gson:2.7.2"
+    const val okhttp3 = "com.squareup.okhttp3:okhttp:3.6.0"
+}
+object Modules {
+    const val ARTICLES = ":articles"
+    const val ARTICLES_DETAILS = ":articleDetails"
+    const val COMMON = ":common"
+    const val MODELS = ":common:models"
+}
+object Logger {
+    const val Timber = "com.jakewharton.timber:timber:5.0.1"
+}
