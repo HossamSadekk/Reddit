@@ -75,6 +75,9 @@ dependencies {
     kapt ("androidx.room:room-compiler:2.5.0")
     implementation("androidx.room:room-runtime:2.5.0")
     implementation(Logger.Timber)
+    implementation(SwipeRefresh.swiperefresh)
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
 
 
 }
