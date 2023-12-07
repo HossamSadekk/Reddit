@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
+
 }
 
 android {
@@ -30,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -69,7 +72,7 @@ dependencies {
     debugImplementation(AndroidComposeDebugLib.UiTestManifest)
     // di
     implementation(DI.Hilt)
-    implementation(DI.Hilt_Compiler)
+    kapt(DI.Hilt_Compiler)
     implementation(DI.Hilt_Navigation)
     // navigation
     implementation(Navigation.NavigationCompose)
@@ -77,7 +80,6 @@ dependencies {
     implementation(Logger.Timber)
     // MODULES
     implementation(project(Modules.ARTICLES))
-    implementation(project(Modules.ARTICLES_DETAILS))
     implementation(project(Modules.CORE))
 
 

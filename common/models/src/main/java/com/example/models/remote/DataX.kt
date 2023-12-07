@@ -73,7 +73,7 @@ data class DataX(
     @SerializedName("downs")
     val downs: Int,
     @SerializedName("edited")
-    val edited: Double,
+    val edited: Any,
     @SerializedName("gilded")
     val gilded: Int,
     @SerializedName("gildings")
@@ -120,8 +120,10 @@ data class DataX(
     val media: Any,
     @SerializedName("media_embed")
     val mediaEmbed: MediaEmbedX,
+
     @SerializedName("media_metadata")
-    val mediaMetadata: MediaMetadata,
+    val mediaMetadata: Map<String, MediaDetails>,
+
     @SerializedName("media_only")
     val mediaOnly: Boolean,
     @SerializedName("mod_note")

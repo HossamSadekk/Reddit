@@ -1,14 +1,15 @@
 package com.example.remote.service
 
-import com.example.models.remote.ArticlesResponse
+import com.example.models.remote.PostResponse
 import retrofit2.http.GET
 
 interface RedditApi {
-    @GET(ARTICLES)
-    suspend fun getTopHeadlines(
-    ): ArticlesResponse
+    @GET(POSTS)
+    suspend fun getPosts(
+    ): PostResponse
+
     companion object {
         const val BASE_URL = "https://www.reddit.com/"
-        const val ARTICLES = "r/kotlin/.json"
+        const val POSTS = "r/kotlin/.json"
     }
 }

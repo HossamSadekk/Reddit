@@ -17,3 +17,7 @@ data class I42qopq09a4c1(
     @SerializedName("status")
     val status: String
 )
+
+class SXX {
+
+}

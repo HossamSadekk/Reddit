@@ -17,3 +17,7 @@ data class Nlzfhabcmh4c1(
     @SerializedName("status")
     val status: String
 )
+
+class SXXX {
+
+}
