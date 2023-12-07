@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/common/local" />
             <option value="$PROJECT_DIR$/common/models" />
             <option value="$PROJECT_DIR$/common/remote" />
+            <option value="$PROJECT_DIR$/postDetails" />
             <option value="$PROJECT_DIR$/posts" />
           </set>
         </option>
