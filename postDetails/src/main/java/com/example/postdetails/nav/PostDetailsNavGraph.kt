@@ -2,9 +2,9 @@ package com.example.postdetails.nav
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
-import com.example.core.navigation.Posts.POSTDETAILS
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.core.navigation.Posts.POSTDETAILS
 import com.example.postdetails.ui.PostDetailsScreen
 
 fun NavGraphBuilder.postDetails(onNavigateBack: () -> Unit) {
@@ -21,11 +21,13 @@ fun NavGraphBuilder.postDetails(onNavigateBack: () -> Unit) {
                 type = NavType.StringType
             }
         )
-        ) { backStackEntry ->
+    ) { backStackEntry ->
         val PostId = backStackEntry.arguments?.getString("PostId")
         val PostTitle = backStackEntry.arguments?.getString("PostTitle")
-        PostId?.let {
-            PostDetailsScreen()
+        if (PostId != null && PostTitle != null) {
+            PostDetailsScreen {
+                onNavigateBack.invoke()
+            }
         }
     }
 }

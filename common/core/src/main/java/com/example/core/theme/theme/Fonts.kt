@@ -1,9 +1,9 @@
-package com.example.redditnews.ui.theme
+package com.example.core.theme.theme
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import com.example.redditnews.R
+import com.example.core.R
 
 val RalewayFonts = FontFamily(
     Font(R.font.raleway_regular, weight = FontWeight.Normal),

@@ -4,6 +4,7 @@ import com.example.models.domainModels.Post
 import com.example.models.local.PostEntity
 import com.example.models.remote.Children
 import com.example.models.remote.DataX
+import com.example.models.remote.postDetails.ChildData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -36,7 +37,7 @@ fun PostEntity.toPost(): Post = Post(
 
 fun DataX.toArticle(): Post = Post(
     id = id,
-    author = author,
+    author = author ?: "",
     description = selftext,
     title = title,
     image = " ",
@@ -46,6 +47,16 @@ fun DataX.toArticle(): Post = Post(
 )
 
 fun DataX.toArticleEntity(): PostEntity = PostEntity(
+    id = id,
+    author = author,
+    description = selftext,
+    title = title,
+    image = " ",
+    score = score,
+    url = permalink,
+    numComments = numComments
+)
+fun ChildData.toArticle(): Post = Post(
     id = id,
     author = author,
     description = selftext,
