@@ -31,7 +31,6 @@ fun PostsScreen(
     onDetailClick: (post: Post) -> Unit = {}
 ) {
     val context = LocalContext.current
-
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val isRefreshing by viewModel.isLoading.collectAsStateWithLifecycle()
     val swipeRefreshState = rememberSwipeRefreshState(isRefreshing = isRefreshing)

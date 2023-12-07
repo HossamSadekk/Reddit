@@ -1,4 +1,4 @@
-package com.example.redditnews.ui.theme
+package com.example.core.theme.theme
 
 import androidx.compose.ui.graphics.Color
 

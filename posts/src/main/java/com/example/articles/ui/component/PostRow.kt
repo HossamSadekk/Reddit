@@ -39,7 +39,7 @@ fun PostRow(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = post.author,
+                text = post?.author ?: "unknown",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )

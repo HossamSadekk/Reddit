@@ -1,6 +1,7 @@
 package com.example.remote.service
 
 import com.example.models.remote.PostResponse
+import com.example.models.remote.postDetails.PostDetailsResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -10,12 +11,12 @@ interface RedditApi {
     ): PostResponse
     @GET(POSTDETAILS)
     suspend fun getPostDetails(
-        @Path("subreddit") subreddit: String,
-        @Path("postId") postId: String
-    ): PostResponse
+        @Path("title") subreddit: String,
+        @Path("id") postId: String
+    ): PostDetailsResponse
     companion object {
         const val BASE_URL = "https://www.reddit.com/"
         const val POSTS = "r/kotlin/.json"
-        const val POSTDETAILS = "r/{subreddit}/comments/{postId}/.json"
+        const val POSTDETAILS = "r/Kotlin/comments/{id}/{title}/.json"
     }
 }
