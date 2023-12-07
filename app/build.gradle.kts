@@ -80,6 +80,7 @@ dependencies {
     implementation(Logger.Timber)
     // MODULES
     implementation(project(Modules.ARTICLES))
+    implementation(project(Modules.POST_DETAILS))
     implementation(project(Modules.CORE))
 
 

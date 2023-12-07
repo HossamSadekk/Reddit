@@ -24,6 +24,7 @@ fun Flow<List<PostEntity>>.mapToPostListFlow(): Flow<List<Post>> {
 }
 
 fun PostEntity.toPost(): Post = Post(
+    id = id,
     author = author,
     description = description,
     title = title,
@@ -34,6 +35,7 @@ fun PostEntity.toPost(): Post = Post(
 )
 
 fun DataX.toArticle(): Post = Post(
+    id = id,
     author = author,
     description = selftext,
     title = title,

@@ -1,6 +1,5 @@
 package com.example.articles.ui
 
-import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,7 +12,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.articles.ui.component.PostsScreenContent
@@ -22,6 +20,7 @@ import com.example.core.components.ErrorView
 import com.example.core.components.ProgressIndicator
 import com.example.core.mvi.BaseViewState
 import com.example.core.util.cast
+import com.example.models.domainModels.Post
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 
@@ -29,6 +28,7 @@ import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 @Composable
 fun PostsScreen(
     viewModel: PostsViewModel = hiltViewModel(),
+    onDetailClick: (post: Post) -> Unit = {}
 ) {
     val context = LocalContext.current
 
@@ -59,7 +59,9 @@ fun PostsScreen(
             ) {
                 when (uiState) {
                     is BaseViewState.Data -> {
-                        PostsScreenContent(uiState.cast<BaseViewState.Data<PostsScreenViewState>>().value)
+                        PostsScreenContent(uiState.cast<BaseViewState.Data<PostsScreenViewState>>().value) {
+                            onDetailClick(it)
+                        }
                     }
 
                     is BaseViewState.Empty -> {

@@ -24,15 +24,20 @@ import com.example.articles.R
 import com.example.models.domainModels.Post
 
 @Composable
-fun PostRow(post: Post) {
+fun PostRow(
+    post: Post,
+    onDetailClick: (post: Post) -> Unit = {}
+) {
     OutlinedCard(
         Modifier.fillMaxWidth().padding(5.dp).clickable {
-
+            onDetailClick(post)
         },
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)
     ) {
-        Column(modifier = Modifier.fillMaxWidth().padding(10.dp),
-            verticalArrangement = Arrangement.Center) {
+        Column(
+            modifier = Modifier.fillMaxWidth().padding(10.dp),
+            verticalArrangement = Arrangement.Center
+        ) {
             Text(
                 text = post.author,
                 style = MaterialTheme.typography.bodySmall,
@@ -54,8 +59,9 @@ fun PostRow(post: Post) {
     }
 
 }
+
 @Composable
-fun ListingItemFooterView(post:Post){
+fun ListingItemFooterView(post: Post) {
     Row(
         modifier = Modifier
             .padding(8.dp)

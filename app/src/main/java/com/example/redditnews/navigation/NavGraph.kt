@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.articles.nav.postsGraph
 import com.example.core.navigation.Posts
+import com.example.postdetails.nav.postDetails
 
 @Composable
 fun MainNavigation(navHostController: NavHostController) {
@@ -14,5 +15,8 @@ fun MainNavigation(navHostController: NavHostController) {
         startDestination = Posts.POSTSGRAPH
     ) {
         postsGraph(navHostController)
+        postDetails{
+            navHostController.popBackStack()
+        }
     }
 }
