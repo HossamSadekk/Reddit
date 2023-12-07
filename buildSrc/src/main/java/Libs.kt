@@ -49,7 +49,7 @@ object Remote {
 
 object Modules {
     const val ARTICLES = ":posts"
-    const val ARTICLES_DETAILS = ":articleDetails"
+    const val POST_DETAILS = ":postDetails"
     const val COMMON = ":common"
     const val MODELS = ":common:models"
     const val REMOTE = ":common:remote"
