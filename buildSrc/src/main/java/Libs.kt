@@ -59,3 +59,7 @@ object Modules {
 object Logger {
     const val Timber = "com.jakewharton.timber:timber:5.0.1"
 }
+
+object SwipeRefresh {
+    const val swiperefresh = "com.google.accompanist:accompanist-swiperefresh:0.25.1"
+}
