@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2022 Fatih OZTURK
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M10,19.878a1.124,1.124 0,0 1,-0.835 -0.371L1.286,10.763a1.125,1.125 0,0 1,0.833 -1.879l3.756,-0.008L5.875,2A1.127,1.127 0,0 1,7 0.875h6A1.127,1.127 0,0 1,14.125 2L14.125,8.887h3.751a1.125,1.125 0,0 1,0.836 1.878l-7.877,8.742A1.124,1.124 0,0 1,10 19.878ZM9.908,18.668h0ZM2.4,10.134 L10,18.566l7.6,-8.429L12.875,10.137L12.875,2.125L7.125,2.125v8Z" />
+</vector>
