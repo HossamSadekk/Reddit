@@ -51,3 +51,12 @@ By adopting Clean Architecture with the Model-View-Intent (MVI) pattern in my An
 - __Testability__ : Components are highly testable. Use Cases, in particular, are testable in isolation, and UI logic is easier to unit test.
 - __Predictable State Management__ : MVI ensures that the UI's state is predictable and easy to reason about, reducing the chances of bugs and unexpected behavior.
 - __Scalability__ : Clean Architecture makes it easier to add new features or scale the app. MVI simplifies managing complex UI logic.
+
+</br>
+
+## Dependency Management with Kotlin DSL in `build.gradle.kts`
+Managing dependencies in an Android project is a crucial aspect of development, and Kotlin DSL (Domain Specific Language) in the build.gradle.kts file brings a host of advantages for a more concise and readable dependency management approach.
+Kotlin DSL promotes a consistent and readable style for dependency declarations, leading to cleaner and more maintainable build scripts.
+
+## Decoupling Components using HILT
+Dependency Injection helps decouple classes by removing the responsibility of creating and managing dependencies from the dependent classes. This results in more modular and maintainable code.
