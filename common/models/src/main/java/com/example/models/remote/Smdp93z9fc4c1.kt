@@ -17,3 +17,7 @@ data class Smdp93z9fc4c1(
     @SerializedName("status")
     val status: String
 )
+
+class SXXXX {
+
+}

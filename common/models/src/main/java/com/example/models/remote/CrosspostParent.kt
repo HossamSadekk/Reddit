@@ -213,3 +213,15 @@ data class CrosspostParent(
     @SerializedName("wls")
     val wls: Int
 )
+
+class MediaEmbed {
+
+}
+
+class Gildings {
+
+}
+
+class SecureMediaEmbed {
+
+}

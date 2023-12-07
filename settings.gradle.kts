@@ -15,9 +15,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Reddit News"
 include(":app")
-include(":articles")
-include(":articleDetails")
+include(":posts")
 include(":common")
 include(":common:models")
 include(":common:remote")
 include(":common:core")
+include(":common:local")

@@ -13,11 +13,11 @@ data class Ulf60r9ui4c1(
     @SerializedName("p")
     val p: List<P>,
     @SerializedName("s")
-    val s: SXXXXX,
+    val s: SXXXXXX,
     @SerializedName("status")
     val status: String
 )
 
-class SXXXXX {
+class SXXXXXX {
 
 }
