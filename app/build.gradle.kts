@@ -83,6 +83,7 @@ dependencies {
     implementation(project(Modules.POST_DETAILS))
     implementation(project(Modules.CORE))
 
+    debugImplementation(LeakMemory.LeakCanary)
 
 
 }

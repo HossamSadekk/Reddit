@@ -44,10 +44,6 @@ class PostsRepositoryImpl @Inject constructor(
         } else {
             flowOf(posts)
         }
-    }.onCompletion {
-        // You can perform some initialization or loading action here
-    }.onEach {
-        _forceRefresh.value = false
     }
 
     private suspend fun getFromApi() =
