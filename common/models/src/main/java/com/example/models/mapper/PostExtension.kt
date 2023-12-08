@@ -35,7 +35,7 @@ fun PostEntity.toPost(): Post = Post(
     numComments = numComments
 )
 
-fun DataX.toArticle(): Post = Post(
+fun com.example.models.remote.DataX.toArticle(): Post = Post(
     id = id,
     author = author ?: "",
     description = selftext,

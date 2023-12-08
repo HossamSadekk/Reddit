@@ -9,8 +9,14 @@ object SupportLib {
     const val compose_material3 = "androidx.compose.material3:material3"
     const val material = "com.google.android.material:material:1.8.0"
     const val appcompat = "androidx.appcompat:appcompat:1.6.1"
+    const val ComposeUijunit4 = "androidx.compose.ui:ui-test-junit4:1.2.0"
 
 }
+
+object LeakMemory {
+    const val LeakCanary = "com.squareup.leakcanary:leakcanary-android:2.12"
+}
+
 object TestingLib {
     const val Junit = "junit:junit:4.13.2"
 }
@@ -29,11 +35,13 @@ object AndroidComposeDebugLib {
 object Navigation {
     const val NavigationCompose = "androidx.navigation:navigation-compose:2.7.5"
 }
+
 object DI {
     const val Hilt = "com.google.dagger:hilt-android:2.44"
     const val Hilt_Compiler = "com.google.dagger:hilt-android-compiler:2.44"
     const val Hilt_Navigation = "androidx.hilt:hilt-navigation-compose:1.0.0"
 }
+
 object Local {
     const val Preferences_DataStore = "androidx.datastore:datastore-preferences:1.0.0"
     const val room = "androidx.room:room-runtime:2.5.2"
@@ -56,6 +64,7 @@ object Modules {
     const val CORE = ":common:core"
     const val LOCAL = ":common:local"
 }
+
 object Logger {
     const val Timber = "com.jakewharton.timber:timber:5.0.1"
 }
