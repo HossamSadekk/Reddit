@@ -64,6 +64,7 @@ Dependency Injection helps decouple classes by removing the responsibility of cr
 
 ## Coroutines & Flows
 In this project i used coroutines for several reasons:
+</br>
 📌 The solution for backpressure in `Flow` comes naturally from the design and philosophy of the coroutines library. It doesn’t need some cleverly engineered solution to handle the backpressure explicitly. All the elements in Flow‘s API are marked with the suspend modifier, which is designed to suspend the execution of the caller without blocking the thread. Therefore, when the `Flow<T>` is emitting and collecting in the same coroutine, if the collector cannot keep up with the data flow, it can simply suspend the emission of elements until it is ready to receive more.</br>
 📌 RxJava requires explicit subscription management, and developers need to manage the lifecycle of subscriptions manually while coroutines on the other hand, provide a more implicit and structured approach to concurrency with the use of `CoroutineScope`.</br>
 📌 Coroutines provide a simpler and more intuitive syntax, especially for developers familiar with Kotlin. The learning curve for coroutines might be less steep compared to RxJava, which introduces its own set of concepts and operators.</br>
