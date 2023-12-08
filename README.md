@@ -62,6 +62,14 @@ Kotlin DSL promotes a consistent and readable style for dependency declarations,
 Dependency Injection helps decouple classes by removing the responsibility of creating and managing dependencies from the dependent classes. This results in more modular and maintainable code.
 </br>
 
+## Coroutines & Flows
+In this project i used coroutines for several reasons:
+📌 The solution for backpressure in `Flow` comes naturally from the design and philosophy of the coroutines library. It doesn’t need some cleverly engineered solution to handle the backpressure explicitly. All the elements in Flow‘s API are marked with the suspend modifier, which is designed to suspend the execution of the caller without blocking the thread. Therefore, when the `Flow<T>` is emitting and collecting in the same coroutine, if the collector cannot keep up with the data flow, it can simply suspend the emission of elements until it is ready to receive more.
+📌 RxJava requires explicit subscription management, and developers need to manage the lifecycle of subscriptions manually while coroutines on the other hand, provide a more implicit and structured approach to concurrency with the use of `CoroutineScope`.
+📌 Coroutines provide a simpler and more intuitive syntax, especially for developers familiar with Kotlin. The learning curve for coroutines might be less steep compared to RxJava, which introduces its own set of concepts and operators.
+📌 The use of suspend functions in coroutines makes asynchronous code look similar to synchronous code, improving readability and maintainability. This is in contrast to RxJava, where reactive chains can sometimes be more complex to understand.
+</br>
+
 # Built with 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Kotlin DSL](https://github.com/gradle/kotlin-dsl-samples) - is a term used to describe a set of programming constructs and conventions in the Kotlin programming language that allow you to create code that feels more like a specialized language for a particular domain or problem.
