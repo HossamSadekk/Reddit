@@ -60,3 +60,19 @@ Kotlin DSL promotes a consistent and readable style for dependency declarations,
 
 ## Decoupling Components using HILT
 Dependency Injection helps decouple classes by removing the responsibility of creating and managing dependencies from the dependent classes. This results in more modular and maintainable code.
+</br>
+
+# Built with 🛠
+- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Kotlin DSL](https://github.com/gradle/kotlin-dsl-samples) - is a term used to describe a set of programming constructs and conventions in the Kotlin programming language that allow you to create code that feels more like a specialized language for a particular domain or problem.
+- [Coroutines](https://kotlinlang.org/docs/coroutines-guide.html) - library for coroutines developed by JetBrains. It contains a number of high-level coroutine-enabled primitives that this guide covers, including launch, async, and others.
+- [ComposeUi](https://developer.android.com/jetpack/compose) - is a library used for building user interfaces in Jetpack Compose, which is a modern Android UI toolkit for building native user interfaces.
+- [Compose Navigation](https://developer.android.com/jetpack/compose/navigation) - library provides a Compose-based way to handle navigation within your Android app. 
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - Dagger Hilt is a dependency injection library for Android apps. It simplifies the process of managing dependencies and allows you to focus on writing clean, modular, and testable code.
+- [Room](https://developer.android.com/training/data-storage/room) - Room Persistence Library is part of Android Jetpack and provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+- [Retrofit](https://square.github.io/retrofit/) - HTTP client library for Android and Java that simplifies the process of making HTTP requests to web services or APIs.
+- [Gson Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/gson) - The Retrofit Gson Converter is an optional extension for the Retrofit HTTP client library that provides support for Gson serialization and deserialization of JSON data. 
+- [OkHttp](https://square.github.io/okhttp/) - OkHttp is a popular open-source HTTP client for Java, Kotlin, and Android applications.
+- [Timber](https://github.com/JakeWharton/timber) - Timber is a popular Android logging library created by Jake Wharton. It provides a flexible and efficient way to log messages and debug information in Android applications. 
+- [LeakCanary](https://square.github.io/leakcanary/) - library is a widely-used Android library for detecting and tracking memory leaks in Android applications.
+
